@@ -2,7 +2,6 @@ import {
   CalendarOutlined,
   DownCircleOutlined
 } from '@ant-design/icons';
-import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './styles.css'
 

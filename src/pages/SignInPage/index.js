@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import * as XLSX from "xlsx";
 import './styles.css';
 import usersData from '../../utie/usersData.json';
 

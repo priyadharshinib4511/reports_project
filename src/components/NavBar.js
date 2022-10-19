@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
 import { Link } from 'react-router-dom';
-import { SidebarData } from './SiderbarData';
+import { SideBarMenu } from './SiderbarMenu';
 import './Navbar.css';
 import { IconContext } from 'react-icons';
 
@@ -29,11 +29,11 @@ function Navbar() {
                 <AiIcons.AiOutlineClose />
               </Link>
             </li>
-            {SidebarData.map((item, index) => {
-                console.log("map=====", item)
+            {SideBarMenu.map((item, index) => {
+              console.log("map=====", item)
               return (
                 <li key={index} className={item.cName}>
-                  <Link style={{backgroundColor: sidebar? "#1a83ff" : "none"}} to={item.path}>
+                  <Link style={{ backgroundColor: sidebar ? "#1a83ff" : "none" }} to={item.path}>
                     {item.icon}
                     <span>{item.title}</span>
                   </Link>

@@ -1,4 +1,4 @@
-const Credentials = {
+const Report1 = {
     workspaceID: "cd39d209-9e79-44c8-ba19-a895a3698fcd",
 
     reportID: "22b35cef-98e1-4654-a2f8-4e320d4eb6c1",
@@ -15,7 +15,7 @@ const Credentials = {
 }
 
 
-const Credentials2 = {
+const Report2 = {
     workspaceID: "cd39d209-9e79-44c8-ba19-a895a3698fcd",
 
     reportID: "57aa3af8-72d2-46bd-89c5-95391b659a0d",
@@ -31,4 +31,4 @@ const Credentials2 = {
     embedUrl: "https://app.powerbi.com/reportEmbed?reportId=22b35cef-98e1-4654-a2f8-4e320d4eb6c1&groupId=cd39d209-9e79-44c8-ba19-a895a3698fcd&w=2&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLVNPVVRILUVBU1QtQVNJQS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOnRydWUsInVzYWdlTWV0cmljc1ZOZXh0Ijp0cnVlLCJza2lwUXVlcnlEYXRhU2FhU0VtYmVkIjp0cnVlLCJza2lwUXVlcnlEYXRhUGFhU0VtYmVkIjp0cnVlLCJza2lwUXVlcnlEYXRhRXhwb3J0VG8iOnRydWV9fQ%3d%3d"
 }
 
-export default {Credentials,Credentials2};
+export default {Report1,Report2};

@@ -6,15 +6,13 @@ import {
     MenuUnfoldOutlined,
     DoubleLeftOutlined,
 } from '@ant-design/icons';
-import { Button, Menu } from 'antd';
-import ACSPage from "../ACSPage";
+import { Button } from 'antd';
 import './styles.css'
-import { Link, NavLink, Route, Routes, useParams } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Home from "../Home";
 import Reports from "../Reports";
-import SignInpage from "../SignInPage";
 
-const items = [
+const pages = [
     {
         title: 'Sales',
         key: '1',
@@ -26,22 +24,9 @@ const items = [
         title: 'Activate',
         key: '2',
         path: '/activate',
-        active: true
+        active: false
 
     }
-    // ,
-    // {
-    //     title: 'Option 2',
-    //     key: '2',
-    //     path: '/option2',
-    //     active: false
-    // },
-    // {
-    //     title: 'Option 3',
-    //     key: '3',
-    //     path: '/option3',
-    //     active: false
-    // }
 ];
 
 function LauderMain() {
@@ -49,7 +34,7 @@ function LauderMain() {
     const [selectedColor, setSelectedColor] = useState(false);
     const [activeColor, setActiveColor] = useState(true);
     const [activeLink, setActiveLink] = useState('1');
-    const [userData, setUserData]  = useState(items)
+    const [userData, setUserData]  = useState(pages)
     const toggleCollapsed = () => {
         setCollapsed(!collapsed);
         setSelectedColor(!selectedColor);
@@ -62,17 +47,17 @@ function LauderMain() {
     const handleChangeLink = (e, index) => {
         const finalIndex = index + 1;
 
-        const finalItem = items.map((value, index) => {
+        const finalItem = pages.map((value, index) => {
             if (value.key === finalIndex.toString()) {
-                return { ...items[index], active: true }
+                return { ...pages[index], active: true }
             }
             else {
-                return { ...items[index], active: false }
+                return { ...pages[index], active: false }
             }
         })
         console.log('-------', finalItem)
 
-        // items = finalItem
+        // pages = finalItem
         setUserData(finalItem);
         setActiveLink(e)
     }
