@@ -1,0 +1,35 @@
+.ACSPage-main{
+    display: flex;
+    flex-direction: column;
+}
+.ACSPage-sub{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0px 10px 0px;
+    /* background: #ececec; */
+}
+.card-style{
+    padding-left: 10px;
+    margin-left: 10px;
+    /* display: flex; */
+    border: 1px rgb(85, 82, 82);
+    border-radius: 5px;
+    box-shadow: 0 0 10px #e0dcdc;
+    height: 350px;
+}
+
+.card-title{
+    font-size: larger;
+    font-weight: bold;
+}
+
+.card-dta{
+    font-size: larger;
+    /* font-weight: bold */
+}
+
+.report-style-class{
+    height: 98%;
+   width: 98%;
+
+}
