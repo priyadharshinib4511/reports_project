@@ -40,7 +40,6 @@ function LauderMain() {
         setSelectedColor(!selectedColor);
     };
     useEffect(() => {
-        console.log('clicked update-----@@@@', userData)
         setUserData(userData)
     }, [userData])
 
@@ -55,7 +54,6 @@ function LauderMain() {
                 return { ...pages[index], active: false }
             }
         })
-        console.log('-------', finalItem)
 
         // pages = finalItem
         setUserData(finalItem);

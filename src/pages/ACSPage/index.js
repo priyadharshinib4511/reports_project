@@ -1,7 +1,6 @@
 import './style.css';
 function ACSPage(selectedPage) {
   // const {id} = useParams()
-  // console.log('params--->', id);
 
   // return (
   //   <div className="ACSPage-main">

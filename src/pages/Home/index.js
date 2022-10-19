@@ -7,7 +7,6 @@ import { PowerBIEmbed } from 'powerbi-client-react';
 
 function Home() {
   const { reportID, accessToken, displayName, embedUrl } = Report1;
-  console.log('HOmePage');
   return (
     <div style={{width:"100%"}}>
       {/* <h1>Home Page</h1> */}

@@ -10,7 +10,6 @@ function Navbar() {
   const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => {
-    console.log("clicked----")
     setSidebar(!sidebar);
   }
 
@@ -30,7 +29,6 @@ function Navbar() {
               </Link>
             </li>
             {SideBarMenu.map((item, index) => {
-              console.log("map=====", item)
               return (
                 <li key={index} className={item.cName}>
                   <Link style={{ backgroundColor: sidebar ? "#1a83ff" : "none" }} to={item.path}>
